@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5ff; /* Blue theme */
+        }
+        body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5ff; /* Blue theme */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+}
+
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.logo {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    color: #2c3e50; 
+}
+
+.links li {
+    display: inline-block;
+    margin-left: 20px;
+    color: #2c3e50; 
+    cursor: pointer;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #2c3e50; 
+}
+
+.links li:last-child {
+    background-color: #3498db; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.links li:last-child a {
+    color: #fff;
+}
+
+.links li:last-child:hover {
+    background-color: #2980b9; 
+}
+        
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 15px;
+        }
+
+        .header-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 25px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 22px;
+            color: #2c3e50; /* Dark blue */
+        }
+
+        .links li {
+            display: inline-block;
+            margin-left: 20px;
+            color: #2c3e50; /* Dark blue */
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .links li:last-child {
+            background-color: #3498db; /* Blue */
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .links li:last-child a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .links li:last-child:hover {
+            background-color: #2980b9; /* Darker blue */
+        }
+
+        .info {
+            width: 100%;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .info h1 {
+            font-size: 36px;
+            color: #2c3e50; /* Dark blue */
+            margin-bottom: 20px;
+        }
+
+        .info p {
+            font-size: 16px;
+            color: #34495e; /* Dark gray */
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .info button {
+            border: 0;
+            border-radius: 20px;
+            padding: 12px 30px;
+            margin-top: 30px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #3498db; /* Blue */
+            transition: background-color 0.3s;
+        }
+
+        .info button:hover {
+            background-color: #2980b9; /* Darker blue */
+        }
+
+        .image {
+            width: 40%;
+            float: right;
+            margin-top: 50px;
+        }
+
+        .image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2c3e50; /* Dark blue */
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .footer-content h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .footer-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .socials {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .socials li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .socials a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .socials a:hover {
+            color: #3498db; /* Blue */
+        }
+
+        .footer-bottom {
+            background-color: #34495e; /* Dark gray */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+        }
+
+        .footer-bottom span {
+            opacity: 0.7;
+            font-weight: 300;
+        }
+    </style>
+
+    <title>Home Page</title>
+</head>
+<body>
+<div class="landing-page">
+    <div class="container">
+        <div class="header-area">
+            <div class="logo">Job Portal</div>
+            <ul class="links">
+                <li>Home</li>
+                <li><a href="job.jsp">Jobs</a></li>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="info">
+            <h1>Find Your Dream Job</h1>
+            <p>Welcome to our job portal. Sign up now to explore job opportunities or log in if you are already a member.</p>
+            <a href="contactus.html" class="btn btn-primary">Contact Us</a>
+        </div>
+        <div class="image">
+            <img src="images/slider2.png" alt="Job Portal Image">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Featured Jobs</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Software Engineer</h5>
+                    <p class="card-text">We are looking for a highly skilled software engineer to join our team.</p>
+                    <a href="#" onclick="alert('login first')" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Marketing Manager</h5>
+                    <p class="card-text">Join our marketing team and help us promote our products to the world.</p>
+                    <a href="#" onclick="alert('login first')" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Code Opacity</h3>
+            <p>We help you find your dream job. Explore our platform to discover exciting career opportunities.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2023 CodeOpacity. Design by <span>Asmit Bajaj</span></p>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+</body>
+</html>
